@@ -69,6 +69,6 @@ for char in a:
             b[char]+= 1
         else:
             b[char]=1
-print(b)            
+print(b)           
             
         
