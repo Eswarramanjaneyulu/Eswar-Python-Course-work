@@ -17,7 +17,7 @@ while cur_attempt <= max_attempt:
         print(f"Incorrect creadentials.Attempts lesft:{cur_attempt}")
 else:
     print("Too many failed attempts.Access blocked")
-'''
+
 
 num = int(input("Enter a number: "))
 
@@ -45,3 +45,6 @@ if is_prime:
     print(f"{num} is a Prime number and it is the {count} prime number.")
 else:
     print(f"{num} is NOT a Prime number.")
+'''
+n=int(input("Enter the no of messages: "))
+chat={}
