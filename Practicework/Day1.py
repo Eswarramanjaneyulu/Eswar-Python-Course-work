@@ -185,8 +185,3 @@ print(len(a))        # Returns the number of elements in the list
 print(any(a))
 print(all(a))
 '''
-
-# Tuple
-a=1,2,3
-print(type(a))
-
