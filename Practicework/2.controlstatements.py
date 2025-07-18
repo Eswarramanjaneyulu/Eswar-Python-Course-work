@@ -45,6 +45,11 @@ if is_prime:
     print(f"{num} is a Prime number and it is the {count} prime number.")
 else:
     print(f"{num} is NOT a Prime number.")
-'''
+
 n=int(input("Enter the no of messages: "))
 chat={}
+'''
+#1. Print Numbers from 1 to N (Using for loop)
+a= int(input("Enter a integer: "))
+for i in range(1,a+1):
+    print(i)
