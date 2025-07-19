@@ -1,6 +1,5 @@
 #print("Hello")
 #String
-'''
 num1 = int(input("Enter a number: "))
 num2 = int(input("Enter a number: "))
 sum =num1+num2
@@ -184,4 +183,4 @@ print(sum(a))        # add all elements in your list
 print(len(a))        # Returns the number of elements in the list
 print(any(a))
 print(all(a))
-'''
+

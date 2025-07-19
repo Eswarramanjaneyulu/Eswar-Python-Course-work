@@ -1,5 +1,4 @@
 # Tuple
-'''
 a=1,2,3
 print(type(a))
 
@@ -115,8 +114,4 @@ student ={
 }
 top_student = max(student, key=student.get)
 print(top_student)
-'''
 
-#Sets
-a={1,2,3,4,5,6,7}
-#Operations on sets
