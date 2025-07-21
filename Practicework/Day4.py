@@ -80,3 +80,16 @@ course="python"
 print(f"Name:{name}|Age:{age}|Score:{course}")
 #4️⃣Using str.format() Method
 print("Name:{}|Age:{}|Score:{}".format(name,age,course))
+
+
+year=int(input())
+mounth=int(input())
+date=int(input())
+print(date,mounth,year,sep="/")               #using separator
+print("{}/{}/{}".format(date,mounth,year))    #using .format()
+print(f'{date}/{mounth}/{year}')              #using f string
+
+a=75.03
+print("A:%.f"%(a))         #if a value after point >50 it print A:76, <50 it will print A:75 
+print("A:%.2f"%(a))        #A:75.55
+                              
