@@ -164,3 +164,4 @@ if a>30:
      print("it's hot")
 else:
      print("it's cool")
+
