@@ -88,4 +88,3 @@ while k<20:
     print("eswar")
     k+=1
 '''
-a=int(input("Enter a number: "))

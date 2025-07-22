@@ -1,4 +1,3 @@
-'''
 #1. Check if a number is a 4-digit even number
 print("4-digit number".center(20," "))
 a=int(input("Enter a number: "))
@@ -136,7 +135,7 @@ if a>=10 and a<=50:
     print("In the range")
 else:
     print("Outside the range")
-'''
+
 #18. Check if number is a perfect square (basic method)
 a=int(input("Enter a number1: "))
 if (a**0.5)**2==a:
@@ -144,3 +143,21 @@ if (a**0.5)**2==a:
 else:
     print("Not Perfect square")
 
+#19. Compare two ages and determine who is older or if same age
+a=int(input("Enter a age 1: "))
+b=int(input("Enter a age 2: "))
+if a<b:
+    print("Second person is older")
+else:
+    print("First person is older")
+
+#20. Check if an angle is acute, right, or obtuse
+a=int(input("Enter an angle: "))
+if a==90:
+    print("Right angle")
+elif a<90:
+    print("Acute angle")
+elif a<=180 and a>90:
+    print("Obtuse angle")
+else:
+    print("Not angle")
