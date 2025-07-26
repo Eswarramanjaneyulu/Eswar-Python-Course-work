@@ -21,6 +21,11 @@ n=int(input("Enter a number: "))
 for i in range(n):
     if i%2!=0:
         print(i)
+        #(or)    
+a=int(input("Enter a Number: "))
+for i in range(1,a,2):
+    print(i)  
+        
 
 #5. Find Factorial of a Number (Using for loop)
 a=int(input("Enter a number: "))
@@ -33,8 +38,12 @@ print(factorial)
 a=int(input("Enter a number: "))
 for i in range(1,11):
     print(a*i)   
-
-#Check Prime Number (Using for loop)
+      #(or)
+a=int(input("Enter a number: "))
+for i in range(1,11):
+    print(f"{a}*{i}={a*i}")  
+    
+#7 Check Prime Number (Using for loop)
 a=int(input("Enter a number: "))
 if a<=1:
     print("Not Prime")
@@ -44,6 +53,14 @@ else:
             print("Not Prime")
     else:
         print("Prime")           
-'''          
-#Sum of Digits of a Number (Using while loop)
-a=int(input("Enter a Number: "))
+        
+#8 Sum of Digits of a Number (Using while loop)
+a=int(input("Enter a number: "))
+b=1
+sum=0
+while b<=a:
+    sum =b+sum
+    b+=1
+print(sum)
+'''        
+

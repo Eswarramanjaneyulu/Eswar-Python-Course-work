@@ -1,6 +1,5 @@
 #Control Statements
 #FOR LOOP
-'''
 fruits=["apple","bananna","cherry"]
 for i in fruits:
     print(i)
@@ -66,5 +65,5 @@ elif a=="rainy":
     print("we will play indoor games")
 else:
     print("we can sleep")
-'''
+
 
