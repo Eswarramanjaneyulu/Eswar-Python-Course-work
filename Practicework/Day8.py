@@ -6,7 +6,6 @@ while condition
 #
 process
 '''
-'''
 #while loop
 candies=10
 while candies>0:
@@ -118,4 +117,3 @@ for i in range(a):
     f=f*a
     a-=1
 print(f)
-'''

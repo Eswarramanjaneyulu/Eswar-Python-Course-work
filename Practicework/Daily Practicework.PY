@@ -1,5 +1,4 @@
-#recursive function:
-'''
+'''#recursive function:
 n=input("Enter the number: ")
 sum=0
 for i in n:
@@ -88,7 +87,156 @@ while k<20:
     print("eswar")
     k+=1
 
+import sys
+import platform
+import math
+import random
+import collections
 
+import platform
+
+print(platform.system())
+print(platform.version())
+print(platform.processor())
+
+import math
+
+print(math.sqrt(25))
+print(math.pow(3,2))
+print(math.fabs(-7))
+print(math.floor(7.5))
+print(math.ceil(24.1))
+print(math.tan(90))
+print(math.sin(90))
+print(math.cos(90))
+print(math.degrees(7))
+
+import random
+
+print(random.random())
+print(random.randint(1,6))
+print(random.uniform(1,6))
+l=["eswar","mani","aditya","venky","sai","chaitu","krishna"]
+print(random.choice(l))
+print(random.choices(l,k=3))
+random.shuffle(l)
+print(l)
+
+import collections
+
+names=["maha","lakshmi","surya","sudha","kusuma","vidya","vidya","vidya","maha","sudha","maha"]
+c=collections.Counter(names)
+print(c)
+
+import collections
+
+names="python programming"
+d={}
+for i in names:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+print(d)
+
+
+import collections
+
+names="python programming"
+d=collections.defaultdict(int)
+d['p']+=1
+print(d)
+
+import random
+
+player1_score=0
+player2_score=0
+
+while player1_score<100 or player2_score<100:
+    player1_turn=random.randint(1,6)
+    player1_score+=player1_turn
+    print(f"\nplayer1 score:{player1_score}-Dice:{player1_turn}\n")
+    
+    player2_turn=random.randint(1,6)
+    player2_score+=player2_turn
+    print(f"\nplayer2 score:{player2_score}-Dice:{player2_turn}\n")
+    
+if player1_score>player2_score:
+    print(f"\nplayer1 Win")
+elif player1_score<player2_score:
+    print(f"\nplayer2 Win")
+else:
+    print("Tie")
+    
+
+import random
+
+player1_score=0
+player2_score=0
+
+while player1_score<100 and player2_score<100:
+    player1=input("player1 -[s]top and [c]ontinue:")
+    if player1=='c':
+        player1_turn=random.randint(1,6)
+        player1_score+=player1_turn
+        print(f"\nplayer1 score:{player1_score}-Dice:{player1_turn}\n")
+    else:
+        print("player2 Win")
+        break
+    player2=input("player2 -[s]top and [c]ontinue:")
+    if player2=='c':
+        player2_turn=random.randint(1,6)
+        player2_score+=player2_turn
+        print(f"\nplayer2 score:{player2_score}-Dice:{player2_turn}\n")
+    else:
+        print("player1 Win")
+if player1_score>player2_score:
+    print(f"\nplayer1 Win")
+elif player1_score<player2_score:
+    print(f"\nplayer2 Win")
+else:
+    print("Tie")
 '''
+import random
 
+player1_score=0
+player2_score=0
+snakes ={19:6,25:11,39:7,50:25,75:18,80:45,98:2}
+ladders={7:79,9:22,17:69,55:76,70:98}
+while player1_score<100 and player2_score<100:
+    player1=input("player1 -[s]top and [c]ontinue:")
+    if player1=='c':
+        player1_turn=random.randint(1,6)
+        player1_score+=player1_turn
+        if player1_score in snakes:
+            player1_score=snakes[player1_score]
+            print(f"\n---------player1-snake bit -score:{player1_score}-Dice:{player1_score}\n")
+        elif player1_score in ladders:
+            player1_score=ladders[player1_score]
+            print(f"\n**********player1-ladder-score:{player1_score}-Dice:{player1_score}\n")
+        else:
+            print(f"\nplayer1 score:{player1_score}-Dice:{player1_turn}\n")
+    else:
+        print("player2 Win")
+        break
+    player2=input("player2 -[s]top and [c]ontinue:")
+    if player2=='c':
+        player2_turn=random.randint(1,6)
+        player2_score+=player2_turn
+        if player2_score in snakes:
+            player2_score=snakes[player2_score]
+            print(f"\n---------player2-snake bit -score:{player2_score}-Dice:{player2_score}\n")
+        elif player2_score in ladders:
+            player2_score=ladders[player2_score]
+            print(f"\n**********player2-ladder-score:{player2_score}-Dice:{player2_score}\n")
+        else:
+            print(f"\nplayer2 score:{player2_score}-Dice:{player2_turn}\n")
+    else:
+        print("player1 Win")
+if player1_score>player2_score:
+    print(f"\nplayer1 Win")
+elif player1_score<player2_score:
+    print(f"\nplayer2 Win")
+else:
+    print("Tie")
 
