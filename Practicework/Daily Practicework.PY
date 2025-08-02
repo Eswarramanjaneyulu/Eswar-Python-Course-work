@@ -196,7 +196,7 @@ elif player1_score<player2_score:
     print(f"\nplayer2 Win")
 else:
     print("Tie")
-'''
+
 import random
 
 player1_score=0
@@ -240,3 +240,51 @@ elif player1_score<player2_score:
 else:
     print("Tie")
 
+a=int(input("Enter a num1: "))
+b=int(input("Enter a num2: "))
+c=int(input("Enter a num3: "))
+if a==b and a==c and c==b:
+    print("Equilateral")
+elif a==b and a!=c and b!=c:
+    print("Isosceles")
+else:
+    print("Scalene")
+
+a=input("Enter a char1: ")
+vowel="aeiouAEIOU"
+if a.isalpha(): 
+    if a in vowel:
+        print("It's a Vowel")
+    else:
+        print("It's a consonant")
+elif a.isdigit():
+    print("It's a Digit")
+else:
+    print("It's a special")
+
+a=float(input("Enter a height: "))
+b=float(input("Enter a weight: "))
+bmi=b/(a*a)
+
+if bmi>25:
+    print("overweight")
+elif bmi<25:
+    print("Underweight")
+else:
+    print("perfact")
+
+a=int(input("Enter a bill: "))
+bill=0
+if a<=100:
+    bill=a*1
+elif a>100 and a<=200:
+    bill=100*1+(a-100)*2
+else:
+    bill=100*1+100*2+(a-200)*3
+    
+print(bill)
+'''
+a=input("Enter a num: ")
+arm=0
+for i in a:
+    arm

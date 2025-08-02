@@ -93,4 +93,70 @@ if original == reverse:
     print("Palindrome number")
 else:
     print("Not a palindrome number")
+
+#12. Print Multiples of 5 up to N (Using for loop)
+a=int(input("Enter a numbber: "))
+for i in range(5,a+1,5):
+    print(i)
+
+#13. Find the Maximum of Three Numbers (Using for loop)
+a=int(input("Enter a num1: "))
+b=int(input("Enter a num2: "))
+c=int(input("Enter a num3: "))
+numbers=[a,b,c]
+
+max_number=max(numbers)
+
+for max_numer in numbers:
+    print("max numbers is :",max_number)
+    break
+
+#    14. Print Reverse of a Number (Using while loop)
+a=int(input("Enter a nunmber: "))
+b=0
+while a>0:
+    b=b*10+a%10
+    a=a//10
+print(b)
+
+#15. Sum of First N Natural Numbers (Using for loop)
+a=int(input("Enter a numbers: "))
+b=0
+for i in range(1,a+1):
+    b+=i
+print(b)
+
+#16. Print Numbers from N to 1 (Using while loop)
+a=int(input("Enter a number: "))
+while a>0:
+    print(a,end=" ")
+    a-=1
+
+#17. Find Sum of Prime Numbers up to N (Using for loop)
+a=int(input("Enter a number: "))
+prime=0
+for i in range (2,a+1):
+    is_prime=True
+    for j in range(2,int(i**0.5)+1):
+        if i%j ==0:
+            is_prime =False
+            break
+    if is_prime:
+        prime+=i
+print("sum of prime numbers upto",a,"is",prime)
+
+#19. Print Numbers Divisible by Both 3 and 5 (Using for loop)
+a=int(input("Enter a number: "))
+print("Numbers divisible by both 3 and 5 up to", a, "are:")
+for i in range(1,a+1):
+    if i%3==0 and i%5==0:
+        print(i, end=" ")
+
+#20. Find GCD of Two Numbers (Using while loop)
+a=int(input("Enter a number: "))
+b=int(input("Enter a number: "))
+while b!=0:
+    a,b=b,a%b
+print("GCD Is:",a)
 '''
+

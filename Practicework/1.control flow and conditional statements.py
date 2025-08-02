@@ -75,4 +75,26 @@ if len(a)>=8:
         print("Week Password")
 else:
     print("Week Password") 
+
+#7. ATM Withdrawal Simulation
+balance,amount=tuple(map(int,input("Enter a amount: ").split()))
+
+if amount<=balance:
+    print("Success the balance left",balance-amount)
+else:
+    print("Not in your account")
+
+#8. Ticket fare calculator with age-based discounts
+a=int(input("Enter a Age: "))
+price=int(input("Enter a ticket price: "))
+if a<5:
+    price="Free"
+elif a>=5 and a<18:
+    price=price-(price*0.5)
+else:
+    price=price-(price*0.3)
+    
+print(price)
 '''
+#9. 24-hour to 12-hour time converter
+
