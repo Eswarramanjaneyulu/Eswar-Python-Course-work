@@ -74,7 +74,7 @@ else:
 '''for iteam in iterable:     while condition:
     if condition:         or       if exit_condition:
         break                       break'''
-'''        
+'''
 numbers = list(map(int,input("Enter a numbers: ").split()))
 target = int(input("Enter a target num: "))
 for num in numbers:
@@ -110,7 +110,7 @@ for i in range(n):
     for j in range(i+1):
         print("*",end=" ")
     print()
-'''
+
 #3. Inverted Right-Angled Triangle
 print("Inverted Right-Angled Triangle".center(50," "))
 n=int(input("Emter a number: "))
@@ -119,3 +119,25 @@ for i in range(n,0,-1):
         print("*",end=" ")
     print()
 
+#4. Pyramid Pattern
+print("pyramid pattern".center(20," "))
+a=int(input("Enter a number: "))
+for i in  range(a):
+    print(' '* (a-i-1)+"* "*(i+1))
+
+#5.Pyramid Pattern
+print("Inverted  Pyramid Pattern ".center(20," "))
+a=int(input("Enter a NUMBER: "))
+for i in range(a- 2, -1, -1):
+    print(' ' * (a- i - 1) + '* ' * (i + 1))
+
+#5. Diamond Pattern
+print(" Diamond Pattern".center(20," "))
+a=int(input("Enter a number: "))
+for i in range(a):
+    print(' '* (a-i-1)+'* '*(i+1))
+    
+for i in range(a-2,-1,-1):
+    print(' '*(a-i-1)+'* '*(i+1))
+'''
+    
