@@ -1,5 +1,4 @@
 #1.BMI
-'''
 def calculate_bmi(weight,height):
     return weight/(height*height)
 weight=int(input("Enter a weight: "))
@@ -59,4 +58,50 @@ for word,count in result.items():
 
 #6.Simulate LUR Cache
 def lur_cache(request,size):
-'''    
+    cache=[]
+    for i in range(1,size+1):
+        cache.append(request[len(request)-i])
+    return cache
+request=eval(input())
+size=int(input())
+print(lur_cache(request,size))  
+
+
+#7.flatten 2D List
+def flatten_matrix(matrix):
+    result =[]
+    for sublist in matrix:
+        for item in sublist:
+            result.append(item)
+    return result
+matrix = eval(input())
+print(flatten_matrix(matrix))
+
+#8.create Email Adderss 
+def create_email(firstname,lastname,domain):
+    return firstname+lastname+'@'+domain
+
+firstname=input().lower()
+lastname=input().lower()
+domain=input().lower()
+print(create_email(firstname,lastname,domain))
+
+#9.find all factors of a number using filter()
+def get_factors(n):
+    for i in range(1,n+1):
+        if n%i==0:
+            print(i)
+                        
+n=int(input())
+get_factors(n)
+
+#10.Format invoice Entry
+def format_invoice(item,Quantity,price):
+    total = Quantity*price
+    return f"{item} X{Quantity} X{price} ={total}"
+    
+item=input()
+quantity=int(input())
+price=int(input())
+print(format_invoice(item,quantity,price))
+
