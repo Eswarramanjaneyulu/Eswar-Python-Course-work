@@ -1,5 +1,5 @@
 #FOR LOOP
-'''
+
 a=list(map(int,input("Enter a numbers: ").split()))
 current_streak =0
 longest_streak =0
@@ -68,13 +68,13 @@ while attempts<max_attempts:
         attempts+=1
 else:
     print("Your OTP experied. Request a new one")
-'''
+
 #break Statement in Python
 #syntx
 '''for iteam in iterable:     while condition:
     if condition:         or       if exit_condition:
         break                       break'''
-'''
+
 numbers = list(map(int,input("Enter a numbers: ").split()))
 target = int(input("Enter a target num: "))
 for num in numbers:
@@ -131,7 +131,7 @@ a=int(input("Enter a NUMBER: "))
 for i in range(a- 2, -1, -1):
     print(' ' * (a- i - 1) + '* ' * (i + 1))
 
-#5. Diamond Pattern
+#6. Diamond Pattern
 print(" Diamond Pattern".center(20," "))
 a=int(input("Enter a number: "))
 for i in range(a):
@@ -139,5 +139,29 @@ for i in range(a):
     
 for i in range(a-2,-1,-1):
     print(' '*(a-i-1)+'* '*(i+1))
-'''
     
+#6. Number Triangle
+a=int(input("Enter a number: "))
+for i in range(1,a+1):
+    for j in range(1,i+1):
+        print(j, end=" ")
+    print()
+
+#7. Floyd’s Triangle
+a=int(input("Enter a number: "))
+b=int(input("Enter a num: "))
+for i in range(1,a+1):
+    for j in range(i):
+        print(b, end=" ")
+        b+=1
+    print()
+
+# 8. Pascal’s Triangle
+a=int(input("Enter a number: "))
+for i in range(a):
+    print(' ' *(a-i), end=" ")
+    num=1
+    for j in range(i+1):
+        print(num, end=" ")
+        num =num *(i-j)//(j+1)
+    print()

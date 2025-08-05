@@ -159,4 +159,9 @@ while b!=0:
     a,b=b,a%b
 print("GCD Is:",a)
 '''
-
+#21. Print Right-Angled Triangle Pattern (Using for loop)
+a=int(input("Enter a number: "))
+for i in range(a+1):
+    for j in range(i):
+        print("*",end=" ")
+    print()

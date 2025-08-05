@@ -284,7 +284,25 @@ else:
     
 print(bill)
 '''
-a=input("Enter a num: ")
-arm=0
-for i in a:
-    arm
+
+class shopping:
+    discount=10
+    
+    classmethod
+    def update(cls,new_discount):
+        cls.discount=new_discount
+        print(f"{new_discount} is updated")
+        
+    def product(self,price,name):
+        self.price=price
+        self.name=name
+              
+user1=shopping()
+user2=shopping()
+
+user1.product(34000,'laptop')
+user2.product(15000,'phone')
+
+print(shopping.discount)
+shopping.discount=15
+print(user1.price)
