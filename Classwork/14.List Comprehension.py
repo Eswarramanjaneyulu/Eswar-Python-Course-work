@@ -118,4 +118,34 @@ products_data=[
             {"name":"Tablets","price":450,"stock":5}
         ]
 print(produts(products_data))
+
+#7. Nested List Comprehension
+products_colors = [
+    {"name": ["Laptop"], "colors": ["Silver", "Black"]},
+    {"name": ["Phone"], "colors": ["Gold", "Blue"]}
+]
+all_colors = [color for product in products_colors for color in product["colors"]]
+all_names = [color for product in products_colors for color in product["name"]]
+print(all_colors)
+print(all_names)
+
+def products(colors):
+    return [color for product in colors for color in product["colors"]]
+
+def products(names):
+    return [name for product in names for name in product["name"]]
+
+colors = [
+    {"name": ["Laptop"], "colors": ["Silver", "Black"]},
+    {"name": ["Phone"], "colors": ["Gold", "Blue"]}
+]
+names = [
+    {"name": ["Laptop"], "colors": ["Silver", "Black"]},
+    {"name": ["Phone"], "colors": ["Gold", "Blue"]}
+]
+print(products(colors))
+print(products(names))
 '''
+
+
+
