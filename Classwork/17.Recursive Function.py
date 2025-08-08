@@ -1,5 +1,4 @@
 #Recursive Functions
-'''
 a=int(input("Enter a number: "))
 f=1
 for i in range(1,a+1):
@@ -34,7 +33,7 @@ def sum_natural(a):
         return a+sum_natural(a-1)
 a=int(input())
 print(sum_natural(a))    
-'''
+
 #Pass by Value and Pass by Reference
 def value(a):
     a+=b
@@ -43,9 +42,27 @@ a=5
 b=int(input())
 value(a)
 print(a)
+
+#Example: Pass by Reference (Mutable Objects)
+def modify_list(lst):
+    lst.append(a)
     
+numbers=[1,2,3,4]
+a=int(input())
+modify_list(numbers)
+print(numbers)
 
+#How to Prevent Unintended Modifications?
+def modify_list_copy(lst):
+    lst=lst[:]
+    lst.append(a)
+    
+    print("Inside function:", lst)
+a=int(input())
 
+numbers=[1,2,3]
+modify_list_copy(numbers)
+print("Outside function:",numbers)
 
 
 
