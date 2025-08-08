@@ -283,7 +283,6 @@ else:
     bill=100*1+100*2+(a-200)*3
     
 print(bill)
-'''
 
 class shopping:
     discount=10
@@ -306,3 +305,173 @@ user2.product(15000,'phone')
 print(shopping.discount)
 shopping.discount=15
 print(user1.price)
+
+a=int(input("Enter a: "))
+b=int(input("Enter b: "))
+if a>b:
+    print(f"{a} is greater than {b}")
+elif b>a:
+    print(f"{b} is grater than {a}")
+else:
+    print(f"{a} is equal to {b}")
+
+#for loops
+name={1:"mani",2:"aditya",3:"eswar"}
+for i in name.keys():
+    print(f"{i}={name[i].capitalize()}")
+
+a={
+    1:1,
+    2:4,
+    3:9,
+    4:16
+}
+for i in a.keys():
+    print(f"{i}:{a[i]} ")
+
+#tables
+for i in range(1,11):
+    print(f"2*{i} ={2*i}")    
+
+#while loop
+a=1
+while a<=10:
+    print(a)
+    a+=1
+
+email,password="eswar@gmail.com","Eswar@143"
+max_attempt=5
+current_attempt=0
+
+while current_attempt<=max_attempt:
+    a=input("Enter a email: ")
+    b=input("Enter a password: ")
+    if a==email and b==password:
+        print("Login successfuly!")
+        break
+    else:
+        print("Worng Password. try again")
+        current_attempt+=1
+else:
+    print("your account are block. max attempt are complete ")
+
+class Instagram:
+    def __init__(self,username):
+        self.username = username
+        print(f"{self.username} user is created! parent-1")
+        
+class InstaV1:
+    def __init__(self,username):
+        self.username = username
+        print(f"{self.uasername} user is created! parent2")
+        
+class InstaV2(Instagram, InstaV1):
+    def __init__(self,username):
+        super().__init__(username)
+        print("Creating user from version 3")
+        
+i=InstaV2("username--xyz")       
+
+class normaluser:
+    def playvideo(self,name):
+        print(f"{name} is playing video with :\n1.Normal Quality\n2.Ads Run\3.No background play\n4.Limited videos download\n5.Music with ads\n")
+    def likes(self):
+        pass
+    def comments(self):
+        pass
+    def share(self):
+        pass
+    def title(self):
+        pass
+    def description(self):
+        pass
+    def subscribe(self):
+        pass
+    
+class primeuser(normaluser):
+    def playvideo(self, name):
+        print(f"\n{name} is playing video with :\n1.High Quality\n2.Ads free\3.Background play\n4.Anything we download\n5.Exclusive music")
+
+user1=normaluser()
+user2=primeuser()
+
+user1.playvideo("Eswar")
+user2.playvideo("Ram")
+
+class normaluser:
+    def playvideo(self,name):
+        print(f"{name} is playing video with :\n1.Normal Quality\n2.Ads Run\3.No background play\n4.Limited videos download\n5.Music with ads\n")
+    
+class primeuser(normaluser):
+    def playvideo(self, name):
+        print(f"\n{name} is playing video with :\n1.High Quality\n2.Ads free\3.Background play\n4.Anything we download\n5.Exclusive music")
+
+def play_video(user,username):
+    user.playvideo(username)
+    
+user1=normaluser()
+user2=primeuser()
+user3=normaluser()
+user4=primeuser()
+user5=primeuser()
+user6=normaluser()
+
+play_video(user1,"Eswar")
+play_video(user2,"krishna")
+play_video(user3,"Mani")
+play_video(user4,"Aditya")
+play_video(user5,"Venky")
+play_video(user6,"Sai")
+
+class number:
+    def __init__(self,num):
+        self.num=num
+    def __add__(self,other):
+        return  self.num+other.num
+    def __sub__(self,other):
+        return  self.num-other.num
+    def __mul__(self,other):
+        return  self.num*other.num
+    def __str__(self):
+        return  f"{self.num}"
+    def __lt__(self,other):
+        return  self.num<other.num
+    def __gt__(self,other):
+        return  self.num>other.num
+    def __floordiv__(self,other):
+        return  self.num//other.num
+    def __truediv__(self,other):
+        return  self.num/other.num
+    def __pow__(self,other):
+        return  self.num**other.num
+        
+number1=number(10)
+number2=number(20)
+print(number1 + number2)
+print(number1 - number2)
+print(number1 * number2)
+print(number1)
+print(number1<number2)
+print(number2>number1)
+print(number1//number2)
+print(number1/number2)
+print(number1**number2)
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
