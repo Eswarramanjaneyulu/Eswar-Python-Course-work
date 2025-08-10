@@ -1,5 +1,4 @@
 #Syntax of a Function in Python:
-'''
 def function_add(a,b):
     return a+b
 a=int(input())
@@ -30,7 +29,7 @@ def function_add(a,b):
 a=int(input())
 b=int(input())
 print(function_add(a,b))
-'''
+
 
     
 

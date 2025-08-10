@@ -1,5 +1,6 @@
 #Function Arguments
 #1. Positional Arguments
+
 def greet(name,age):
     print(f"Hello {name}, you are {age} years old.")
 a=input("Enter a Name: ")
@@ -16,8 +17,8 @@ greet(name=a,age=b)
 #3. Default Arguments
 def greet(name, age=18):
     print(f"Hello {name}, you are {age} years old.")
-
-greet("Bob")
+a=input()
+greet(a)
 
 #4. Variable-Length Arguments
 #*args (Arbitrary Positional Arguments)
@@ -48,7 +49,7 @@ x = int(input())
 def show():
     print(x)
 show()
-
+# or
 x=10
 def update():
     global x
