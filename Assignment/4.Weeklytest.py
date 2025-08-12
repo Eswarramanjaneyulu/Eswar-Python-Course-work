@@ -74,13 +74,12 @@ print(remove_duplicate(words))
 
 # 9.countdown timer(generator)
 def count_down(n):
-    while n>0:
+    while n >= 0:
         yield n
-        n-=1
+        n -= 1
 
-n=int(input("Enter a number: "))
-for num in count_down(n):
-    print(num)     
+n = int(input("Enter a number: "))
+print(*count_down(n), sep=",")    
 
 #10.nested sum (recursion)
 def nested_sum(lst):
