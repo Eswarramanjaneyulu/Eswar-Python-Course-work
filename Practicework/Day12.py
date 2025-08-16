@@ -2,7 +2,7 @@
 # syntax
 #def functino_name(parameters):
     # function body 
-'''
+
 #add two numbers
 def sum(a,b):
     print(a+b)
@@ -50,6 +50,4 @@ name=input("Enter your name: ")
 age=int(input("Enter your age: "))
     
 info(name,age)
-'''
-#
 

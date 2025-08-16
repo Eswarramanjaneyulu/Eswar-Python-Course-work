@@ -1,5 +1,4 @@
 #1. Print Numbers from 1 to N (Using for loop)
-'''
 n=int(input("Enter a number: "))
 for i in range(n):
     print(i)
@@ -158,7 +157,7 @@ b=int(input("Enter a number: "))
 while b!=0:
     a,b=b,a%b
 print("GCD Is:",a)
-'''
+
 #21. Print Right-Angled Triangle Pattern (Using for loop)
 a=int(input("Enter a number: "))
 for i in range(a+1):

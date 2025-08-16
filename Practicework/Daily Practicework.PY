@@ -456,9 +456,23 @@ print(number2>number1)
 print(number1//number2)
 print(number1/number2)
 print(number1**number2)
+
+def custom_sort(lst):
+    for i in range(len(lst)):
+        for j in range(i + 1, len(lst)):
+            if lst[i] > lst[j]:
+                lst[i], lst[j] = lst[j], lst[i]
+    return lst
+lst=eval(input())
+print(custom_sort(lst))
 '''
-
-
+def count_down(n):
+    for i in range(n+1):
+        yield n-i
+        
+n = int(input("Enter a number: "))
+for num in count_down(n):
+    print(num,end=",")
 
 
 
