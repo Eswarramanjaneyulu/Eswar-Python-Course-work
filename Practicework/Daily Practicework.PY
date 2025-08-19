@@ -465,19 +465,56 @@ def custom_sort(lst):
     return lst
 lst=eval(input())
 print(custom_sort(lst))
+# 19/08/25
+import re 
+res =re.split(r'[,:/0;]','eswar,mani;aditya/sai')
+print(res)
+
+import re
+
+text="Java Programming Language"
+res =re.sub(r"Java","Python",text)
+print(res)
+
+import re
+pattern =r"\d+"
+text="My phone number is 6385241583"
+match =re.search(pattern,text)
+if match:
+    print("Match found:",match.group())
+else:
+    print("No match found")
+
+import re 
+
+result =re.match(r"Hello", "Hello World")
+print(result.group() if result else "No match")
 '''
-def count_down(n):
-    for i in range(n+1):
-        yield n-i
-        
-n = int(input("Enter a number: "))
-for num in count_down(n):
-    print(num,end=",")
+import re
 
+def validate_name(name):
+    pattern=r'^[A-Za-z][2,25]( [A-Za-z][2,25])+$'
+    return bool(re.fullmatch(pattern,name))
+name=input()
+print(validate_name(name))
 
+def validate_email(email):
+    pattern=r'^[a-z0-9._]+@[a-z._]+\.[a-z][2,3]+$'
+    return bool(re.fullmatch(pattern,email))
+email=input()
+print(validate_email(email))
 
+def validate_phone(phone):
+    pattern=r'^(?:\+91|0)?[6-9]\d[9]$'
+    return bool(re.fullmatch(pattern,phone))
 
+def validate_password(password):
+    pattern=r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]'
+    return bool(re.fullmatch(pattern,password))
 
+def validate_username(username):
+    pattern=r'^[a-zA-Z0-9](5,15)$'
+    return bool(re.fullmatch(pattern,username))
 
 
 
