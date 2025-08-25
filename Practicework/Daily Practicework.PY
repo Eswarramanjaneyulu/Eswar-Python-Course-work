@@ -489,7 +489,7 @@ import re
 
 result =re.match(r"Hello", "Hello World")
 print(result.group() if result else "No match")
-'''
+
 import re
 
 def validate_name(name):
@@ -516,7 +516,44 @@ def validate_username(username):
     pattern=r'^[a-zA-Z0-9](5,15)$'
     return bool(re.fullmatch(pattern,username))
 
+def add(a,b):
+    print(a+b)
+num1=int(input())
+num2=int(input())
+add(num1,num2)
 
+def area_of_circle(r):
+    return 3.141*r**2
+a=int(input())
+print(area_of_circle(a))
+
+def roots(a,b,c):
+    roots1=a**1/2
+    roots2=b**1/2
+    roots3=c**1/2
+    print(f"{roots1},{roots2},{roots3}")
+x=int(input())
+y=int(input())
+z=int(input())
+roots(x,y,z)    
+
+def swap(a,b):
+    b=b+a
+    a=b-a
+    b=b-a
+    print(a)
+    print(b)
+x=int(input())    
+y=int(input())    
+swap(x,y)
+
+x = 100
+def func():
+    x = 50 # Local variable shadows global x
+    print(x)
+func()
+print(x)
+'''    
 
 
 

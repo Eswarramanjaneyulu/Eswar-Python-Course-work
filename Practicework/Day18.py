@@ -1,3 +1,8 @@
+#syntax of parameters (definations)
+#def-(key word) function_name(parameters):
+    #function body
+#syntax of argument(calls) (it will use call a function)
+#function_name(argument)
 #functions
 def function(a):
     return f"Hello,{a}"
@@ -37,4 +42,22 @@ print(div(a,b))
 print(floor_div(a,b))
 print(exponations(a,b))
 print(module(a,b))
+
+def function(a):
+    return f"Hello,{a}"
+name=input()
+print(function(name))
+
+def add(a,b):
+    print(a+b)
+num1=int(input())
+num2=int(input())
+add(num1,num2)
+
+def len_string(a):
+    return len(a)
+str1=input()
+print(len_string(str1))
+
+
 
