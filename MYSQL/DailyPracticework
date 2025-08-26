@@ -1,0 +1,46 @@
+
+import mysql.connector
+
+# Connect to MySQL
+mydb = mysql.connector.connect(
+    host="localhost",       # usually localhost
+    user="root",            # your MySQL username
+    password="yourpassword", # your MySQL password
+    database="testdb"       # make sure this database exists
+)
+
+cursor = mydb.cursor()
+
+# Create table if not exists
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT
+)
+""")
+
+# --- Taking input from user ---
+name = input("Enter student name: ")
+age = int(input("Enter student age: "))
+
+# Insert into table
+sql = "INSERT INTO students (name, age) VALUES (%s, %s)"
+val = (name, age)
+cursor.execute(sql, val)
+
+# Save (commit) changes
+mydb.commit()
+
+print(f"{cursor.rowcount} record inserted successfully!")
+
+# --- Fetch and display all records ---
+cursor.execute("SELECT * FROM students")
+result = cursor.fetchall()
+
+print("\nAll Students:")
+for row in result:
+    print(row)
+
+# Close connection
+mydb.close()
