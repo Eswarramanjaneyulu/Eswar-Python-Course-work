@@ -1,5 +1,4 @@
 #1. What is a List?
-'''
 numbers=list(input("Enter a numbers: "))
 names=list(input("Enter a names: "))
 mixed=list(input("Enter a mixed: "))
@@ -145,7 +144,7 @@ names = [
 ]
 print(products(colors))
 print(products(names))
-'''
+
 
 
 
