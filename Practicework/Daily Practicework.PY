@@ -553,13 +553,95 @@ def func():
     print(x)
 func()
 print(x)
-'''    
 
+#union of set   
+s1={1,2,3}
+s2={1,2,4,5,6}
+s3=s2.union(s1)
+print(s3)
 
+#intersection of set
+s1={1,2,3}
+s2={1,2,4,5,6}
+s3=s2.intersection(s1)
+print(s3)
 
+#differnce or set
+s1={1,2,3}
+s2={1,2,4,5,6}
+s3=s2.difference(s1)
+print(s3)
 
+#symmetric_difference
+s1={1,2,3}
+s2={1,2,4,5,6}
+s3=s2.symmetric_difference(s1)
+print(s3)
 
+#frozenset
+my_set={1,2,3,4}
+frozen_set=frozenset(my_set)
+print(frozen_set)
 
+#set comprehesions
+squares={x**2 for x in range(1,6)}
+print(squares)
+
+#Dictionary
+my_dict={"Name":"Eswar","Age":22}
+print(my_dict)
+print(my_dict["Name"])
+print(my_dict["Age"])
+
+my_dict={"Name":"Eswar","Age":22}
+my_dict["Place"]="Kajuluru"
+print(my_dict)
+
+my_dict={"Name":"Eswar","Age":22}
+print(my_dict.pop("Age"))
+print(my_dict)
+
+my_dict={"Name":"Eswar","Age":22}
+print(my_dict.items())
+
+my_dict={"Name":"Eswar","Age":22}
+print(my_dict.values())
+print(my_dict.keys())
+
+my_dict={"Name":"Eswar","Age":22}
+for key in my_dict:
+    print(key)
+for value in my_dict.values():
+    print(value)
+for key,value in my_dict.items():
+    print(key,value)
+'''
+import smtplib
+import os
+import csv
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
+
+SMTP_SERVER = "smtp.gmail.com"
+SMTP_PORT = 587
+SENDER_EMAIL = "eswarramanjaneyulyu9@gmail.com"
+SENDER_PASSWORD = "Eswar@143"
+
+def send_email(to_email,subject,body,attachments=None):
+        msg=MIMEMultipart()
+        msg["From"]=SENDER_EMAIL
+        msg["To"]=to_email
+        msg["Subject"]=subject
+        msg.attach(MIMEText(body,"plain"))
+        
+        if attachments:
+            for file_path in attachments:
+                if os.path.exists(file_path):
+                    
+        
+        
 
 
 
