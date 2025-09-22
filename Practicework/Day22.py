@@ -67,7 +67,7 @@ plt.ylabel("Sales")
 plt.title("Monthly Sales")
 
 plt.show()
-
+#7.question
 import pandas as pd
 names,marks={
     "names":"Eswar","marks":75,
@@ -80,7 +80,7 @@ b=pd.read_csv(marks)
 c=b[b["marks"]>80]
 print("Students marks >80")
 print(c)
-
+#
 import pandas as pd
 # Example: Product Prices
 product_prices = pd.Series(
