@@ -1,4 +1,3 @@
-'''
 #1.question
 try:
     a=int(input("Enter a number: "))
@@ -99,4 +98,4 @@ data = {
 }
 df = pd.DataFrame(data)
 print(df)
-'''
+

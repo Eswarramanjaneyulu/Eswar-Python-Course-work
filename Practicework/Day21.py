@@ -1,6 +1,6 @@
 #Recursive Functions
 #Example 1: Factorial of a Number
-'''
+
 def factorial_number(n):
     if n==0 or n==1:
         return 1
@@ -101,4 +101,3 @@ print(c)
 
 s=[x**2 for x in range(1,6)]
 print(s)
-'''

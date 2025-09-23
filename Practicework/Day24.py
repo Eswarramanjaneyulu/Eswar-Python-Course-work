@@ -1,4 +1,3 @@
-'''
 names=input("Enetr a names: ").split()
 print(names)
 
@@ -174,4 +173,3 @@ while a!='0':
     print('')
     person(Name=name,Age=age,Mobile=mobile,City=city)
     a=input("Enter a zero to exit or any key to countinue: ")
-'''

@@ -1,4 +1,3 @@
-'''
 my_set={"Eswar","Mani","Aditya",True,100,100}
 print("Eswar" in my_set)
 print("Eswar" not in my_set)
@@ -191,6 +190,6 @@ while attempt <max_attempt:
         attempt+=1
 else:
     print("Account locked due to too many failed attempts")
-'''
+
         
 
