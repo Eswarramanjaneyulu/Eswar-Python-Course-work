@@ -1,4 +1,5 @@
-'''#recursive function:
+'''
+#recursive function:
 n=input("Enter the number: ")
 sum=0
 for i in n:
@@ -615,7 +616,7 @@ for value in my_dict.values():
     print(value)
 for key,value in my_dict.items():
     print(key,value)
-'''
+
 import smtplib
 import os
 import csv
@@ -639,9 +640,105 @@ def send_email(to_email,subject,body,attachments=None):
         if attachments:
             for file_path in attachments:
                 if os.path.exists(file_path):
-                    
-        
-        
 
+#List
+a=[1,2,3,4,5]
+a.remove(5)
+print(a)
+a=[1,2,3,4,5]
+a.pop(2)
+print(a)
+a=[1,2,3,4,5]
+del a[3]
+print(a)
 
+a=[1,2,3,4,5]
+a.append(6)
+print(a)
 
+a=[1,2,3,4,5]
+a.extend([2,3])
+print(a)
+
+a=[1,2,3,4,5]
+a.insert(1,7)
+print(a)                    
+
+a=[1,2,3,4,5]
+print(a.count(1))
+
+a=[1,2,3,4,5]
+print(a.index(5))
+
+a=[1,2,3,4,5]
+a.sort(reverse=True)
+print(a)
+a.sort()
+print(a)
+a.reverse()
+print(a)
+
+#6. Looping Through a List
+#6.1 Using for Loop
+a=["apple","banana","coconut","goa","grapes","mango"]
+for i in a:
+    print(i)   
+
+#6.2 Using while Loop
+a=["apple","banana","coconut","goa","grapes","mango"]
+i=0
+while i<len(a):
+    print(a[i])
+    i+=1
+#6.3 Using enumerate()
+a=["apple","banana","coconut","goa","grapes","mango"]
+for index,i in enumerate(a):
+    print(index,i) 
+
+#8. Copying a List
+a=[1,2,3,4]
+b=a.copy()
+print(a)
+print(b)
+
+#9. Sorting and Reversing Lists
+a=[1,2,3,4,5]
+a.sort(reverse=True)
+print(a)
+a.sort()
+print(a)
+a.reverse()
+print(a)
+
+a=5
+for i in range(a):
+    for j in range(a):
+        if i==a-1 or (i==0 and j==a//2) or (i==1 and j==a%2) or (i==2 and j==a%1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+n = 5  # height of the triangle
+
+for i in range(1, n+1):
+    for j in range(1, 2*n):
+        if j == n-i+1 or j == n+i-1 or i == n:
+            print("*", end="")
+        elif j > n-i+1 and j < n+i-1 and i < n:
+            print(" ", end="")
+        else:
+            print(" ", end="")
+    print()
+
+n = 4
+for i in range(1, n+1):
+    for j in range(1, n-i+1):
+        print(" ", end=" ")
+    for j in range(1, 2*i):
+        if j == 1 or j == 2*i-1 or i == n:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+'''
