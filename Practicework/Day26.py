@@ -1,4 +1,3 @@
-'''
 # Generators
 def my_generation():
     yield 1
@@ -173,7 +172,7 @@ future_date = today + timedelta(days=7)
 print("Date after 7 days:", future_date)
 past_date = today - timedelta(days=3)
 print("Date 3 days ago:", past_date)
-'''
+
 from datetime import datetime, timedelta
 now = datetime.today()
 future_time = now + timedelta(hours=2)
